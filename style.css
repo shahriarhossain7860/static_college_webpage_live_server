@@ -79,7 +79,7 @@ nav ul li::after {
     border: 1px solid #f44336;
     background: #f44336;
 }
-nav .fa {
+nav .fa-solid {
     display: none;
 }
 /* Mobile Responsive Code */
@@ -96,13 +96,37 @@ nav .fa {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
     }
-    nav .fa {
+    nav .fa-solid {
         display: block;
         color: #fff;
-        
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+/* course */
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.course p {
+    font-size: 14px;
+    color: #777;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }
