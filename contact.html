@@ -22,11 +22,11 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">COURSE</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showmenu()"></i>
@@ -61,17 +61,17 @@
                 <div>
                 <i class="fa-solid fa-envelope"></i>
                     <span>
-                        <h5>shahriar78@gmail.com</h5>
+                        <h5>info@gmail.com</h5>
                         <p>Email Us Your Query</p>
                     </span>
                 </div>
             </div>
             <div class="contact-col">
-                <form action="">
-                    <input type="text" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <input type="text" placeholder="Enter Your Subject" required>
-                    <textarea  rows="8" placeholder="Message"></textarea>
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea name="message" rows="8" placeholder="Message"></textarea>
                     <button type="submit" class="hero-btn red-btn">Send Message</button>
                 </form>
             </div>
